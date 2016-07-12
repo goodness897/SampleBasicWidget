@@ -28,7 +28,6 @@ public class EditActivity extends AppCompatActivity {
             public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
 
             }
-
             @Override
             public void onTextChanged(CharSequence s, int i, int i1, int i2) {
                 String pass = s.toString();
@@ -37,8 +36,6 @@ public class EditActivity extends AppCompatActivity {
                 } else {
                     passwordView.setTextColor(Color.BLACK);
                 }
-
-
             }
 
             @Override
