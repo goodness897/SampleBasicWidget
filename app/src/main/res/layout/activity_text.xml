@@ -20,8 +20,8 @@
         android:layout_alignParentStart="true"
         android:textColor="@color/text_color"
         android:textSize="@dimen/text_size"
-        android:singleLine="false"
-        />
+        android:singleLine="true"
+        android:ellipsize="marquee"/>
 
     <Button
         style="?android:attr/buttonStyleSmall"
@@ -33,23 +33,13 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"/>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="New Text"
-        android:id="@+id/textView5"
-        android:layout_below="@+id/btn_selected"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:background="#f00"/>
-
     <Button
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="CHANGE"
         android:id="@+id/btn_change"
-        android:layout_above="@+id/textView5"
+        android:layout_below="@+id/text_message"
         android:layout_toRightOf="@+id/btn_selected"
         android:layout_toEndOf="@+id/btn_selected"/>
 
@@ -59,7 +49,17 @@
         android:layout_height="wrap_content"
         android:text="html"
         android:id="@+id/btn_html"
-        android:layout_above="@+id/textView5"
+        android:layout_below="@+id/text_message"
         android:layout_toRightOf="@+id/btn_change"
         android:layout_toEndOf="@+id/btn_change"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?android:buttonStyle"
+        android:text="New Text"
+        android:id="@+id/textView5"
+        android:layout_below="@+id/btn_selected"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
 </RelativeLayout>
